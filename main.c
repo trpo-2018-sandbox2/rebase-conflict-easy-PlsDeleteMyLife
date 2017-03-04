@@ -30,10 +30,18 @@ int main()
     const int min = min_element(arr, N_ELEMENTS(arr));
 
     printf("Array: ");
-    int i;
-    for (i = 0; i < N_ELEMENTS(arr); ++i) {
+    //<<<<<<< HEAD
+    //   int i;
+    //   for (i = 0; i < N_ELEMENTS(arr); ++i) {
       //>>>>>>> Count array items with macro
-        printf("%d ", arr[i]);
+    //      printf("%d ", arr[i]);
+    //=======
+    int i = 0;
+    printf("%d", arr[i]);
+    ++i;
+    for (; i < N_ELEMENTS(arr); ++i) {
+        printf(", %d", arr[i]);
+	//>>>>>>> Separate elements with comma
     }
     printf("\n");
 
